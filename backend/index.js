@@ -9,7 +9,7 @@ const jwt = require("jsonwebtoken");
 const studentSchema = require("./student/studentSchema");
 const deleteStudent = require("./Routes/deleteStudent");
 const { default: mongoose } = require("mongoose");
-const authRoutes = require("../Routes/auth");
+const authRoutes = require("./Routes/auth");
 const roomRoutes = require("./Routes/roomRoutes");
 const Room = require("./Room/Room");
 dotenv.config({ path: "./.env" });
