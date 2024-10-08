@@ -1,0 +1,141 @@
+/* General container for the dashboard */
+.user-dashboard {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #0000fd;
+}
+
+/* Navbar styling */
+.user-navbar {
+  background-color: #007bff;
+  color: rgb(255, 105, 105);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.welcome-text {
+  margin-top: 3rem;
+}
+
+.user-navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Main content area */
+.dashboard-content {
+  padding: 20px;
+  margin-top: 60px; /* Adjust based on the navbar height */
+}
+
+/* Header styling */
+.dashboard-content h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* User details section */
+.user-details {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-details h1 {
+  font-size: 1.8rem;
+  color: #00060c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.headingOne {
+  color: gray;
+}
+
+/* Book button container */
+.book-button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Book button styling */
+.book-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 10rem;
+}
+
+.book-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .user-navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  .dashboard-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .user-details {
+    padding: 15px;
+    max-width: 90%; /* Adjusted to provide more flexibility on smaller screens */
+  }
+
+  .user-details h1 {
+    font-size: 1.6rem;
+  }
+
+  .book-button {
+    width: 80%; /* Button takes more width on smaller screens for better visibility */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-navbar h1 {
+    font-size: 1rem;
+  }
+
+  .dashboard-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .user-details {
+    padding: 10px;
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .user-details h1 {
+    font-size: 1.4rem;
+  }
+
+  .book-button {
+    width: 100%; /* Button spans full width on mobile screens */
+    font-size: 14px;
+  }
+}

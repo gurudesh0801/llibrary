@@ -1,0 +1,149 @@
+/* General container styling */
+.room-container {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 46rem; /* Default width for larger screens */
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.roomHeading {
+  margin: 2rem;
+  text-align: center;
+}
+
+/* Room heading */
+.room-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Seat grid */
+.seat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual seat styling */
+.seat {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Seat available styling */
+.seat.available {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+/* Seat selected styling */
+.seat.selected {
+  background-color: green;
+  color: white;
+}
+
+/* Seat unavailable styling */
+.seat.unavailable {
+  background-color: red;
+  cursor: not-allowed;
+  color: white;
+}
+
+/* Booking section */
+.booking-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+}
+
+/* Input styling */
+.booking-section input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Button styling */
+.booking-section button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-section button:hover {
+  background-color: #1a5276;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .room-container {
+    width: 90%; /* Make container width responsive on smaller screens */
+    margin-bottom: 1rem;
+  }
+  .roomHeading {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  /* Adjust seat size for smaller screens */
+  .seat {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Increase spacing for seat grid */
+  .seat-grid {
+    gap: 8px; /* Smaller gaps for smaller screens */
+  }
+
+  /* Adjust font size for headings */
+  .room-container h2 {
+    font-size: 1.25rem; /* Smaller font size for smaller screens */
+  }
+
+  .booking-section input,
+  .booking-section button {
+    font-size: 0.9rem; /* Smaller font size for inputs and buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for very small screens */
+  .room-container {
+    padding: 5px; /* Reduce padding */
+  }
+
+  .booking-section {
+    flex-direction: column; /* Stack input and button */
+    align-items: stretch; /* Stretch to full width */
+  }
+
+  .booking-section input {
+    margin-bottom: 10px; /* Space between input and button */
+  }
+
+  .seat {
+    width: 35px; /* Further reduce seat size */
+    height: 35px;
+  }
+}
