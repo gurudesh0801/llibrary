@@ -11,7 +11,7 @@ const CheckFeeStatus = () => {
   const [editingStudent, setEditingStudent] = useState(null); // State for editing student
 
   useEffect(() => {
-    fetch(`${BASE_URL}/api/viewall`, {
+    fetch(`https://llibrary-backend.onrender.com/api/viewall`, {
       method: "GET",
       header: {
         "Content-type": "application/json",
@@ -42,7 +42,7 @@ const CheckFeeStatus = () => {
   const handleDelete = (id) => {
     const ans = confirm(`Are you sure want to delete id=${id}`);
     if (ans) {
-      fetch(`${BASE_URL}/api/delete/${id}`, {
+      fetch(`https://llibrary-backend.onrender.com/api/delete/${id}`, {
         method: "DELETE",
       })
         .then((response) => {
@@ -64,7 +64,7 @@ const CheckFeeStatus = () => {
   };
 
   const handleSave = (updatedStudent) => {
-    fetch(`${BASE_URL}/api/edit/${updatedStudent._id}`, {
+    fetch(`https://llibrary-backend.onrender.com/api/edit/${updatedStudent._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
