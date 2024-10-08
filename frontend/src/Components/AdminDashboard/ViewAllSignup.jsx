@@ -13,7 +13,7 @@ const ViewAllSignup = () => {
 
   useEffect(() => {
     // Fetch student data from the backend API
-    fetch(`${BASE_URL}/api/viewSignup`, {
+    fetch(`https://llibrary-backend.onrender.com/api/viewSignup`, {
       method: "GET",
       header: {
         "Content-type": "application/json",
