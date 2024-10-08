@@ -28,7 +28,7 @@ const RoomList = () => {
     if (showLoading) setLoading(true);
     setError("");
     try {
-      const response = await fetch("http://localhost:5000/api/rooms");
+      const response = await fetch("https://llibrary-backend.onrender.com/api/rooms");
       const data = await response.json();
       setRooms((prevRooms) => {
         // Check if there's any difference in the seat availability
