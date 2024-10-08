@@ -16,7 +16,7 @@ const Login = () => {
 
     // Send login request to the server
     try {
-      const response = await fetch(`${BASE_URL}/login`, {
+      const response = await fetch(`https://llibrary-backend.onrender.com/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
