@@ -48,7 +48,7 @@ const SignUp = () => {
     }
 
     try {
-      const response = await fetch(`${BASE_URL}/signup`, {
+      const response = await fetch(`https://llibrary-backend.onrender.com/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const SignUp = () => {
   const fetchUserDetails = async (userId) => {
     console.log("Fetching details for user ID:", userId); // Debug log
     try {
-      const userResponse = await fetch(`${BASE_URL}/user/${userId}`);
+      const userResponse = await fetch(`https://llibrary-backend.onrender.com/user/${userId}`);
       if (!userResponse.ok) {
         const errorText = await userResponse.text();
         console.error("Failed to fetch user details:", errorText);
