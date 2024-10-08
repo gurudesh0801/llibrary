@@ -42,7 +42,7 @@ const UserNavbar = ({ setView }) => {
     };
   }, []);
   const handleOnClick = () => {
-    fetch(`${BASE_URL}/logout`, {
+    fetch(`https://llibrary-backend.onrender.com/logout`, {
       method: "POST",
       credentials: "include",
     })
