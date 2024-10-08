@@ -37,7 +37,7 @@ const NewEntryForm = () => {
     if (fee < paid) alert("Fees are paid by student is grater then the actual");
     else "";
 
-    fetch(`${BASE_URL}/students`, {
+    fetch(`https://llibrary-backend.onrender.com/students`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const NewEntryForm = () => {
       <form
         onSubmit={handleSubmit}
         method="post"
-        action={`${BASE_URL}/students`}
+        action={`https://llibrary-backend.onrender.com/students`}
         className="contentForm"
       >
         <div>
